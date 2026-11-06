@@ -1,24 +1,48 @@
-<box border radius="lg" padding={3} gap={2}>
-  <row align="center" gap={2}>
-    <icon name="folder" color="#D69E36"/> **after-uts/**
-  </row>
-  <box padding={{left:4}} gap={2}>
-    <row align="center" gap={2}>
-      <icon name="folder" color="#D69E36"/> **Praktikum6/**
-    </row>
-    <box padding={{left:4}} gap={2}>
-      <row align="center" gap={2}>
-        <icon name="folder" color="#D69E36"/> **src/**
-      </row>
-      <box padding={{left:4}} gap={1}>
-        <text color="secondary" size="sm">review/</text>
-        <text color="secondary" size="sm">selfcheck/</text>
-        <text color="secondary" size="sm">shop/</text>
-        <text color="secondary" size="sm">tools/</text>
-      </box>
-      <row align="center" gap={2}>
-        <icon name="file-text"/> README.md
-      </row>
-    </box>
-  </box>
-</box>
+# AFTER UTS – PEMROGRAMAN BERORIENTASI OBJEK
+
+Repository ini digunakan untuk menyimpan dokumentasi dan source code tugas serta praktikum mata kuliah **Pemrograman Berorientasi Objek (PBO)** setelah Ujian Tengah Semester (UTS).
+
+## Identitas Mahasiswa
+
+| Keterangan | Informasi |
+|---|---|
+| Nama | Rafikhul Ramadhan |
+| NIM | 2511533012 |
+| Program Studi | Informatika |
+| Fakultas | Teknologi Informasi |
+| Universitas | Universitas Andalas |
+
+## Daftar Praktikum
+
+| Praktikum | Materi | Folder |
+|---|---|---|
+| Praktikum 6 | Abstraction | `Praktikum6/` |
+
+## Teknologi
+
+- Java
+- JDK
+- Visual Studio Code
+
+## Struktur Repository
+
+```text
+after-uts/
+└── Praktikum6/
+    ├── README.md
+    └── src/
+        ├── review/
+        ├── selfcheck/
+        ├── shop/
+        └── tools/
+```
+
+## Tujuan Repository
+
+Repository ini dibuat sebagai tempat penyimpanan source code, dokumentasi, dan hasil pengerjaan praktikum Pemrograman Berorientasi Objek setelah UTS.
+
+---
+
+**Universitas Andalas**  
+Fakultas Teknologi Informasi  
+Program Studi Informatika
