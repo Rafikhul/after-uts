@@ -28,13 +28,8 @@ Repository ini digunakan untuk menyimpan dokumentasi dan source code tugas serta
 
 ```text
 after-uts/
-└── Praktikum6/
-    ├── README.md
-    └── src/
-        ├── review/
-        ├── selfcheck/
-        ├── shop/
-        └── tools/
+├── Praktikum6/
+└── README.md
 ```
 
 ## Tujuan Repository
