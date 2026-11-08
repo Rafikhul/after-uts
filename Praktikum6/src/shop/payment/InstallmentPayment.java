@@ -3,7 +3,6 @@ package shop.payment;
 public interface InstallmentPayment extends PaymentMethod {
     int maxInstallmentMonths();
 
-    /** Menghitung cicilan dengan pembulatan ke atas. */
     default long monthlyInstallment(long amount, int months) {
         if (amount < 0) {
             throw new IllegalArgumentException("Amount cannot be negative");

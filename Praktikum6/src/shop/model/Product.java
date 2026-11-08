@@ -6,13 +6,13 @@ public abstract class Product {
     private final long price;
 
     protected Product(String sku, String name, long price) {
-        if(sku == null || sku.isBlank()) {
+        if (sku == null || sku.isBlank()) {
             throw new IllegalArgumentException("SKU cannot be null or blank");
         }
-        if(name == null || name.isBlank()) {
+        if (name == null || name.isBlank()) {
             throw new IllegalArgumentException("Name cannot be null or blank");
         }
-        if(price < 0) {
+        if (price < 0) {
             throw new IllegalArgumentException("Price cannot be negative");
         }
         this.sku = sku;
@@ -20,19 +20,11 @@ public abstract class Product {
         this.price = price;
     }
 
-    public String getSku() { 
-        return sku; 
-    } 
-    public String getName() {
-        return name;
-    }
-    public long  getPrice() {
-        return price;
-    }
+    public String getSku() { return sku; }
+    public String getName() { return name; }
+    public long getPrice() { return price; }
 
-    public long getFinalPrice() {
-        return price;
-    }
+    public long getFinalPrice() { return price; }
 
     public abstract String category();
 

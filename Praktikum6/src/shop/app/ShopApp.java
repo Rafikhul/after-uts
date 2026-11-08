@@ -15,7 +15,6 @@ import shop.shipping.ExpressShipping;
 import shop.shipping.RegularShipping;
 import shop.shipping.ShippingService;
 
-/** Program utama latihan L1-L5. */
 public class ShopApp {
     public static void main(String[] args) {
         Product coffee = new PhysicalProduct(
@@ -43,7 +42,6 @@ public class ShopApp {
         System.out.println("Total Reguler : Rp" + checkout.total(cart, regular));
         System.out.println("Total Ekspres : Rp" + checkout.total(cart, express));
 
-        // Demo pembayaran dari beberapa implementasi PaymentMethod.
         EWalletPayment wallet = new EWalletPayment("DompetKu", 500_000L);
         PaymentMethod transfer = new BankTransferPayment("Bank Nagari");
         CreditCardPayment card = new CreditCardPayment("Siti Rahma", 1_000_000L);
@@ -57,11 +55,9 @@ public class ShopApp {
         System.out.println(card.getName() + " berhasil? "
                 + checkout.checkout(cart, express, card));
 
-        // Demo refund melalui interface RefundablePayment.
         System.out.println("Refund e-wallet: "
                 + checkout.refund(wallet, ebook.getFinalPrice()));
 
-        // Demo nested class static, inner class, dan receipt.
         Address address = new Address("Jl. Moh Hatta No. 10", "Padang", "25121");
         Order order = new Order("ORD-0001", address);
         order.addLine(coffee, 2);
@@ -70,7 +66,6 @@ public class ShopApp {
         System.out.println("Contoh static nested Line: " + firstLine.subtotal());
         System.out.println("\n" + order.createReceipt().toText());
 
-        // Anonymous class: voucher hanya digunakan pada demo ini.
         PaymentMethod voucher = new PaymentMethod() {
             private long remaining = 50_000L;
 

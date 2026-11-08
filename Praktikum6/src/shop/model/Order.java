@@ -39,7 +39,6 @@ public class Order {
 
     public Receipt createReceipt() { return new Receipt(); }
 
-    /** Static nested class: satu baris item tidak perlu mengakses Order. */
     public static class Line {
         private final Product product;
         private final int quantity;
@@ -56,7 +55,6 @@ public class Order {
         public long subtotal() { return product.getFinalPrice() * quantity; }
     }
 
-    /** Inner class: struk membaca data dari objek Order yang menaunginya. */
     public class Receipt {
         public String toText() {
             StringBuilder result = new StringBuilder();

@@ -1,6 +1,5 @@
 package shop.model;
 
-/** Alamat immutable agar pesanan tidak saling mengubah alamat. */
 public final class Address {
     private final String street;
     private final String city;
